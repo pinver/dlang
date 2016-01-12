@@ -2,7 +2,7 @@
 # ... build this image with ...
 # docker build --tag=pinver/dlang:2.069.latest
 
-FROM pinver/dlang:base
+FROM pinver/dlang:base.latest
 
 # ... first of all, always update the packages ...
 RUN apt-get -q update
