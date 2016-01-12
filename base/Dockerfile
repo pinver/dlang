@@ -1,6 +1,6 @@
 
 # ... build this image with ...
-# docker build --tag=pinver/dlang:base.1
+# docker build --tag=pinver/dlang:base
 
 FROM ubuntu:15.10
 
