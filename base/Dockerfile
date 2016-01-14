@@ -11,6 +11,7 @@ RUN apt-get -q update
 RUN apt-get -qy install \
     curl libcurl3-gnutls unzip xz-utils ssh \
     gcc g++ \
+    git \
     vim
 
 # ... download and install dub ...
