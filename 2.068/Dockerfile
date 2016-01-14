@@ -8,9 +8,9 @@ FROM pinver/dlang:base.latest
 RUN apt-get -q update
 
 # ... download (following redirect) and expand the ldc compiler ...
-RUN curl --insecure -L https://github.com/ldc-developers/ldc/releases/download/v0.17.0-alpha1/ldc2-0.17.0-alpha1-linux-x86_64.tar.xz | tar xJ && \
+RUN curl --insecure -L https://github.com/ldc-developers/ldc/releases/download/v0.17.0-beta1/ldc2-0.17.0-beta1-linux-x86_64.tar.xz | tar xJ && \
     mkdir -p /cellar/ldc && \
-    mv ldc2-0.17.0-alpha1-linux-x86_64 /cellar/ldc/0.17.0
+    mv ldc2-0.17.0-beta1-linux-x86_64 /cellar/ldc/0.17.0
 ENV PATH $PATH:/cellar/ldc/0.17.0/bin
 
 # ... download and install dmd ...
