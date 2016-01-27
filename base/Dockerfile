@@ -10,7 +10,7 @@ RUN apt-get -q update
 # ... generic utilities and development tools ...
 RUN apt-get -qy install \
     curl libcurl3-gnutls unzip xz-utils ssh time \
-    gcc g++ gdb :w\
+    gcc g++ gdb \
     git \
     vim
 
